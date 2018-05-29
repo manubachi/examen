@@ -56,4 +56,9 @@ class Reservas extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Usuarios::className(), ['id' => 'usuario_id']);
     }
+
+    public function siguiente()
+    {
+        
+    }
 }

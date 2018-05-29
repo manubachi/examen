@@ -61,7 +61,7 @@ class ReservasSearch extends Reservas
         $query->andFilterWhere([
             'id' => $this->id,
             'instante' => $this->instante,
-            'usuario_id' => $this->usuario_id,
+            'usuario_id' => Yii::$app->user->id,
         ]);
 
         return $dataProvider;
